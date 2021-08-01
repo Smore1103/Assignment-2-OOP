@@ -1,0 +1,157 @@
+# Assignment-2-OOP
+
+#include <iostream>
+using namespace std;
+
+int Add_num(int x , int y)  // function to add 2 int numbers
+{
+	int s;
+	s = x+y;
+	return s;
+}
+
+short Add_num(short x, short y)  // function to add 2 short numbers
+{
+	short s;
+	s = x+y;
+	return s;
+}
+
+float Add_num(float x, float y) // function to add 2 float numbers
+{
+	float s;
+	s = x+y;
+	return s;
+}
+
+double Add_num(double x, double y) // function to add 2 double numbers
+{
+	double s;
+	s = x+y;
+	return s;
+}
+
+long double Add_num(long double x, long double y) // function to add 2 long double numbers
+{
+	long double s;
+	s = x+y;
+	return s;
+}
+
+long int Add_num(long int x, long int  y) // function to add 2 long int numbers
+{
+	long int s;
+	s = x+y;
+	return s;
+}
+
+int main()
+{
+	// defining all variables to be used 
+	int a,b, c, ch;
+	short d,e,f;
+	float g, h, i;
+	double j,k , l;
+	long double m,n,o;
+	long int p,q,r;
+	
+	// Asking user to choose which data type he wants to add 
+	
+	do
+	{
+		cout << "1. Int " <<endl;
+		cout << "2. Short " <<endl;
+		cout << "3. Float " <<endl;
+		cout << "4. Double " <<endl;
+		cout << "5. Long Double " <<endl;
+		cout << "6. Long Int " <<endl;
+		cout << "7. Exit " <<endl;
+		cout << "Please choose the data types that you want to add: " <<endl;
+		cin >> ch;
+		
+		switch( ch )
+		{
+			case 1: cout << "Please enter the first number : " << endl;
+			        cin >> a;
+			        
+			        cout << "Please enter the second number : "<< endl;
+			        cin >> b;
+			        
+			        c = Add_num(a , b);  // int Add_num(int x, int y) will be called due to integer parameters
+			        
+			        cout << "The result of the addition of 2 int type numbers are: " << c <<endl;
+			        
+			        break;
+			        
+			case 2: cout << "Please enter the first number : " << endl;
+			        cin >> d;
+			        
+			        cout << "Please enter the second number : "<< endl;
+			        cin >> e;
+			        
+			        f = Add_num(d , e); // short Add_num(short x, short y) will be called due to short parameters
+			        
+			        cout << "The result of the addition of 2 short type numbers are: " << f <<endl;
+			        
+			        break;
+			        
+			case 3: cout << "Please enter the first number : " << endl;
+			        cin >> g;
+			        
+			        cout << "Please enter the second number : "<< endl;
+			        cin >> h;
+			        
+			        i = Add_num(g , h); // float Add_num (float x, float y) will be called due to float parameters
+			        
+			        cout << "The result of the addition of 2 float type numbers are: " << i <<endl;
+			        
+			        break;
+			        
+			case 4:cout << "Please enter the first number : " << endl;
+			        cin >> j;
+			        
+			        cout << "Please enter the second number : "<< endl;
+			        cin >> k;
+			        
+			        l = Add_num(j , k); // double Add_num (double x, double y) will be called due to double parameters
+			        
+			        cout << "The result of the addition of 2 double type numbers are: " << l <<endl;
+			        
+			        break;
+			        
+			case 5:cout << "Please enter the first number : " << endl;
+			        cin >> m;
+			        
+			        cout << "Please enter the second number : "<< endl;
+			        cin >> n;
+			        
+			        o = Add_num(m , n); 
+			        // long double Add_num (long double x, long double y) will be called due to long double parameters
+			        
+			        cout << "The result of the addition of 2 long double type numbers are: " << o <<endl;
+			        
+			        break;
+			        
+			case 6:cout << "Please enter the first number : " << endl;
+			        cin >> p;
+			        
+			        cout << "Please enter the second number : "<< endl;
+			        cin >> q;
+			        
+			        r = Add_num(p , q);
+			        // long int Add_num (long int x, long int y) will be called due to long int parameters
+			        
+			        cout << "The result of the addition of 2 long int type numbers are: " << r <<endl;
+			        
+			        break;
+			        
+			case 7: cout << "Thank You !";
+			        break;
+			        
+			default:cout << "Invalid choice! "<<endl;
+		}
+	}while (ch != 7);
+	
+	
+	
+}
